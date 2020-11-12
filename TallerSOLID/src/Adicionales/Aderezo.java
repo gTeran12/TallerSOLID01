@@ -1,6 +1,19 @@
 package Adicionales;
 
-public enum Aderezo 
+public abstract class Aderezo
 {
-    MALVAVISCOS,FRUTILLA,CREMA 
+    public String nombre;
+    
+    public abstract Aderezo setNombre(String nombre);
+
+    public String getNombre() 
+    {
+        return nombre;
+    }
+    
+    @Override
+    public String toString() 
+    {
+        return (this.nombre.toUpperCase());
+    }
 }
