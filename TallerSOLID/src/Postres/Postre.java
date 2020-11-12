@@ -25,7 +25,6 @@ public class Postre
         this.aderezos = new ArrayList<>();
     }
     
-     
     public String getSabor() {
         return sabor;
     }
@@ -47,12 +46,10 @@ public class Postre
     }
     
     public void AgregarAderezo(Aderezo aderezo){
-        aderezos.add(aderezo);
+        this.aderezos.add(aderezo);
     }
     
     public void QuitarAderezo(Aderezo aderezo){
-        aderezos.remove(aderezo);
+        this.aderezos.remove(aderezo);
     }
-    
-    
 }
