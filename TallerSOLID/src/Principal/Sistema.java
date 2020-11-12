@@ -20,7 +20,8 @@ public class Sistema {
         OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
 //        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
-        System.out.println(helado_vainilla.PrecioFinal());
+        //System.out.println(helado_vainilla.PrecioFinal());
+        Procesos.ManejadorDePrecio.showPrecioFinal(helado_vainilla);
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
@@ -28,6 +29,7 @@ public class Sistema {
         OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
 //        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
-        System.out.println(helado_vainilla.PrecioFinal()); 
+        //System.out.println(helado_vainilla.ManejadorDePrecioPrecioFinal(pastel_chocolate)); 
+        Procesos.ManejadorDePrecio.showPrecioFinal(pastel_chocolate);
     }
 }
