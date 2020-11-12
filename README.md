@@ -4,4 +4,4 @@ Solucion: Creamos una clase Postre y esta clase se encargaba de crear los distin
 
 SRP: La clase ManejadorDePrecio utiliza este principio en sus métodos "calcularPrecioFinal" y "showPrecioFinal".
 
-LSP: Manejador de Leche maneja este principio para solucionar su problema con la excepcion.
+LSP: ManejadorDeLeche maneja este principio para solucionar su problema con la excepcion.
