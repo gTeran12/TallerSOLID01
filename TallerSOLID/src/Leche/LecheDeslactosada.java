@@ -20,6 +20,8 @@ public class LecheDeslactosada extends LecheEntera {
     public void usarPastel() {
         // Lanzar error No se puede usar en pastel
         throw new RuntimeException(this.getClass() + ": No se puede usar en pastel");
+        
+       
     }
         
 }
