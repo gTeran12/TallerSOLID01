@@ -15,18 +15,23 @@ public class Sistema {
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
         
         // Producir Helado
-        Helado helado_vainilla = new Helado("Vainilla");
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
+        Postre helado_vainilla = new Helado("Vainilla");
+        helado_vainilla.AgregarAderezo(Aderezo.CREMA);
+        helado_vainilla.AgregarAderezo(Aderezo.FRUTILLA);
+        //OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
+        //OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
 //        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
         //System.out.println(helado_vainilla.PrecioFinal());
         Procesos.ManejadorDePrecio.showPrecioFinal(helado_vainilla);
         
         // Producir Pastel
-        Pastel pastel_chocolate = new Pastel("Chocolate");
-        OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
+        Postre pastel_chocolate = new Pastel("Chocolate");
+        pastel_chocolate.AgregarAderezo(Aderezo.CREMA);
+        pastel_chocolate.AgregarAderezo(Aderezo.FRUTILLA);
+        
+//        OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
+//        OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
 //        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         //System.out.println(helado_vainilla.ManejadorDePrecioPrecioFinal(pastel_chocolate)); 
